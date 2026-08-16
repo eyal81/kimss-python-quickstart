@@ -24,7 +24,7 @@ flowchart LR
 > **To route traffic, you must create a free control plane namespace. Get your API key at [kimss.ai](https://kimss.ai/app/signup) (25,000 governed requests/mo included. No credit card).**
 
 1. **[Create Free Account →](https://kimss.ai/app/signup)** — the Developer tier is **always free**: 25,000 governed requests/month, 14-day telemetry retention, no expiration cliff.
-2. After signup you land on the **Gateway** tab. Click **Generate API key** and copy the `kimss_...` key once — it is shown a single time. The same keys are listed under **Governance → API Keys**.
+2. After signup you land on the **Gateway** tab. Click **Generate Key** and copy the `kimss_...` key once — it is shown a single time. The same keys are listed under **Governance → API Keys**.
 
 ## Step 2 — Vault your provider key in the Kimss UI
 
