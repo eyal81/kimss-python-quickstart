@@ -5,7 +5,21 @@
 
 Your company is already building with AI. The problem is that right now it is probably **unmanaged**: provider keys hardcoded in `.env` files, scripts calling models directly, and no record of who made which call. That is Shadow AI — and a chat log cannot tell you who made the call, and it certainly cannot stop the next one.
 
-[Kimss](https://kimss.ai) is an **Enterprise Agent Control Plane**. It sits in front of the model endpoints you already own as a zero-trust gateway: every AI request routes through one door where identity, audit trails, and a kill switch actually live. Kimss never hosts your models and never charges for inference compute — you bring your own endpoints, Kimss governs the traffic.
+[Kimss](https://kimss.ai) is a **Secure AI Gateway** and **Governance Control Plane**. Every AI request routes through one door where identity, audit trails, and a kill switch actually live. Kimss never hosts your models and never charges for inference compute — you bring your own endpoints (**BYOI**), Kimss governs the traffic.
+
+**30-second drop-in:**
+
+```python
+from openai import OpenAI
+client = OpenAI(api_key="kimss_...", base_url="https://api.kimss.ai/v1")
+```
+
+```bash
+OPENAI_BASE_URL="https://api.kimss.ai/v1"
+OPENAI_API_KEY="kimss_..."
+```
+
+Step-by-step: [GETTING_STARTED.md](GETTING_STARTED.md). AI assistants: [docs/KIMSS_ONBOARDING.md](docs/KIMSS_ONBOARDING.md).
 
 This repo is a strict 5-minute tutorial: route one local call through the Kimss gateway and see it land in your governed audit trail.
 
