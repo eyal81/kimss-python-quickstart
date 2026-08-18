@@ -2,7 +2,7 @@
 
 This repo is the 5-minute tutorial. Full SDK docs: [eyal81/kimss-python-sdk](https://github.com/eyal81/kimss-python-sdk).
 
-**Developer tier (Always Free):** 25,000 governed requests/month, 14-day telemetry, 5 builder & admin seats. No credit card.
+**Developer tier (Always Free):** 25,000 governed requests/month, 14-day telemetry, up to 5 workspace members. No credit card.
 
 1. Vault a provider key in **Governance → Provider Vault**.
 2. Generate a `kimss_...` Gateway key.
