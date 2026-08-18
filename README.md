@@ -65,7 +65,7 @@ The script routes a completion through `https://api.kimss.ai` with your `X-Kimss
 Open your dashboard:
 
 - **Gateway → Recent calls** — the request you just sent, attributed to your `agent_id`.
-- **Governance → Audit Trail** (`/app/governance/audit-log`) and **Telemetry** (`/app/governance/telemetry`) — who called, which agent, when, and the outcome. Free tier keeps 14 days of telemetry.
+- **Governance → Audit Trail** (`/app/governance/audit-log`) and **Usage** (`/app/governance/usage`) — who called, which agent, when, and the outcome. Free tier keeps 14 days of telemetry.
 
 That is the difference between a chat log and a control plane: the record is **gateway-verified**, not a self-report.
 
