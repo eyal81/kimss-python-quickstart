@@ -1,5 +1,3 @@
 # Kimss Python quickstart — AI assistants
 
-Follow [AI_INTEGRATION.md](AI_INTEGRATION.md).
-
-Prefer `example_02_openai_override.py`: OpenAI client, `base_url=https://api.kimss.ai/v1`, `extra_headers` with `X-Kimss-Agent-Id`. Never generate `KimssClient` chat/completions. Keys are `kimss_...`. Kill switch: `agent_disabled`.
+Follow [AI_INTEGRATION.md](AI_INTEGRATION.md). Dual OpenAI + Anthropic drop-in. Never use KimssClient for inference.

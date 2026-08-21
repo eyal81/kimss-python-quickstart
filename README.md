@@ -4,7 +4,9 @@
 [![Python](https://img.shields.io/pypi/pyversions/kimss.svg?color=purple)](https://pypi.org/project/kimss/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-indigo.svg)](LICENSE)
 
-**Track, govern, and secure autonomous agents with exactly 1 line of code.**
+**Track, govern, and secure autonomous agents with exactly 1 line of code. Zero data-plane refactoring required.**
+
+Dual-listener: OpenAI (`/v1/chat/completions`) and Anthropic (`/v1/messages`). Keep your native SDK.
 
 [Kimss](https://kimss.ai) is a **Secure AI Gateway** and **Governance Control Plane**. Point the official OpenAI client at Kimss, add an Agent ID header, and every request is identified, audited, and kill-switchable. Kimss never hosts your models (**BYOI**).
 
