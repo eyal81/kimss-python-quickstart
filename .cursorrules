@@ -1,3 +1,5 @@
-# Kimss Python quickstart
+# Kimss Python quickstart — AI assistants
 
-Follow docs/KIMSS_ONBOARDING.md. OpenAI drop-in: https://api.kimss.ai/v1 + kimss_... key. Native SDK host has no /v1 suffix. Do not invent Anthropic/Azure inbound URLs. Never "zero-trust".
+Follow [AI_INTEGRATION.md](AI_INTEGRATION.md).
+
+Prefer `example_02_openai_override.py`: OpenAI client, `base_url=https://api.kimss.ai/v1`, `extra_headers` with `X-Kimss-Agent-Id`. Never generate `KimssClient` chat/completions. Keys are `kimss_...`. Kill switch: `agent_disabled`.
