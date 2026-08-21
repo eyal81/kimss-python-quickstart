@@ -51,7 +51,7 @@ resp = client.chat.completions.create(
 ### 3. Route Traffic (zero refactoring)
 
 ```bash
-git clone https://github.com/eyal81/kimss-python-quickstart.git
+git clone https://github.com/kimssai/kimss-python-quickstart.git
 cd kimss-python-quickstart
 pip install -r requirements.txt
 cp .env.example .env   # KIMSS_WORKSPACE_KEY / KIMSS_API_KEY, KIMSS_AGENT_ID, KIMSS_MODEL
@@ -72,7 +72,7 @@ Open **Gateway → Recent calls** to see the governed audit trail.
 
 ## Related
 
-- SDK: [eyal81/kimss-python-sdk](https://github.com/eyal81/kimss-python-sdk) · [kimss.ai](https://kimss.ai)
+- SDK: [kimssai/kimss-python-sdk](https://github.com/kimssai/kimss-python-sdk) · [kimss.ai](https://kimss.ai)
 - Architecture: [Zero-Trust AI + Hermis](https://kimss.ai/zero-trust-ai-architecture)
 
 ## License
