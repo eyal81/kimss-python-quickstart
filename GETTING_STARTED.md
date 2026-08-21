@@ -1,6 +1,6 @@
 # Getting started — first governed call
 
-This repo is the 5-minute tutorial. Full SDK docs: [eyal81/kimss-python-sdk](https://github.com/eyal81/kimss-python-sdk).
+This repo is the 5-minute tutorial. Traffic is governed by the **Hermis** orchestration framework behind the Kimss Gateway. Full SDK docs: [eyal81/kimss-python-sdk](https://github.com/eyal81/kimss-python-sdk).
 
 **Developer tier (Always Free):** 25,000 governed requests/month, 14-day telemetry, up to 5 workspace members. No credit card.
 

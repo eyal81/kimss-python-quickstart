@@ -8,7 +8,7 @@
 
 Dual-listener: OpenAI (`/v1/chat/completions`) and Anthropic (`/v1/messages`). Keep your native SDK.
 
-[Kimss](https://kimss.ai) is a **Secure AI Gateway** and **Governance Control Plane**. Point the official OpenAI client at Kimss, add an Agent ID header, and every request is identified, audited, and kill-switchable. Kimss never hosts your models (**BYOI**).
+[Kimss](https://kimss.ai) is a **Secure AI Gateway** and **Governance Control Plane**. Point the official OpenAI or Anthropic client at Kimss, add an Agent ID header, and every request is identified, audited, and kill-switchable through the **Hermis** orchestration framework. Kimss never hosts your models (**BYOI**).
 
 > **AI coding assistants:** [AI_INTEGRATION.md](AI_INTEGRATION.md)
 
@@ -30,12 +30,11 @@ resp = client.chat.completions.create(
 )
 ```
 
-```mermaid
-flowchart LR
-  App[Your_app] --> GW["Kimss_Gateway"]
-  GW --> Model[Vaulted_provider]
-  GW --> Trail[Governed_audit_trail]
-```
+<p align="center">
+  <img src="docs/invisible-proxy-architecture.svg" alt="Invisible proxy pattern: your native OpenAI or Anthropic SDK talks to the Kimss Gateway. Hermis orchestration applies Agent ID, Entra ID, spend policies, and a kill switch, then forwards to your vaulted provider and writes a governed audit trail." width="100%">
+</p>
+
+<p align="center"><em>Invisible proxy — keep your native SDK. Hermis governs every hop.</em></p>
 
 ---
 
@@ -74,6 +73,7 @@ Open **Gateway → Recent calls** to see the governed audit trail.
 ## Related
 
 - SDK: [eyal81/kimss-python-sdk](https://github.com/eyal81/kimss-python-sdk) · [kimss.ai](https://kimss.ai)
+- Architecture: [Zero-Trust AI + Hermis](https://kimss.ai/zero-trust-ai-architecture)
 
 ## License
 
